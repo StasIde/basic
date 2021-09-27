@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown</title>
+    <style>
+      .navItems {
+        display: none;
+      }
+      .navItems a {
+        display: block;
+        width: 200px;
+        text-align: center;
+        border: 1px solid #000;
+        border-radius: 4px;
+        margin: 2px 0;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <button id="btn">dropdown menu</button>
+      <div class="navItems">
+        <a href="">item</a>
+        <a href="">item</a>
+        <a href="">item</a>
+        <a href="">item</a>
+        <a href="">item</a>
+      </div>
+    </nav>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+      cupiditate incidunt alias eaque velit facilis consequuntur neque veniam
+      magni ea! Ut quia quae nesciunt odit eius dolor similique magni minus!
+    </p>
+    <script>
+      let items = document.querySelector(".navItems");
+      const btn = document
+        .getElementById("btn")
+        .addEventListener("click", function (el) {
+          if (items.style.display === "block") {
+            items.style.display = "none";
+          } else {
+            items.style.display = "block";
+          }
+        });
+    </script>
+  </body>
+</html>
