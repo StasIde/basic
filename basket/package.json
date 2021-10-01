@@ -1,0 +1,13 @@
+{
+  "name": "basket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js.js",
+  "scripts": {
+    "start": "node js"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
