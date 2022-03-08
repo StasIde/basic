@@ -119,6 +119,7 @@ document.addEventListener("click", function (event) {
     minusItem(elId);
   }
 
+  
   if (elType === "remove") {
     removeItem(elId);
   }
