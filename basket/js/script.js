@@ -6,8 +6,6 @@ const item1 = {
   img: "./img/snowboard.jpeg",
 };
 
-
-
 const item2 = {
   name: "Wet suit",
 
@@ -25,6 +23,7 @@ const item3 = {
   img: "./img/snowboard-boots.jpeg",
 };
 let basket = [item1, item2, item3];
+
 
 const itemsContainer = document.getElementById("items");
 
@@ -82,10 +81,8 @@ const addItem = function (id) {
         count: item.count + 1,
       };
     }
-
     return item;
   });
-
   renderItems();
 };
 
@@ -95,13 +92,11 @@ const minusItem = (id) => {
       if (item.count === 1) {
         return item;
       }
-
       return {
         ...item,
         count: item.count - 1,
       };
     }
-
     return item;
   });
 
