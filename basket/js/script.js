@@ -6,6 +6,8 @@ const item1 = {
   img: "./img/snowboard.jpeg",
 };
 
+
+
 const item2 = {
   name: "Wet suit",
 
